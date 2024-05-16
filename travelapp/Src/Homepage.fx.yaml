@@ -20,8 +20,8 @@ Homepage As screen:
             HoverFill: =RGBA(0, 120, 212, 1)
             PressedFill: =RGBA(0, 120, 212, 1)
             Width: =607
-            X: =18
-            Y: =34
+            X: =19
+            Y: =26
             ZIndex: =2
 
         "'Rectangle 2' As rectangle":
@@ -51,8 +51,8 @@ Homepage As screen:
             PressedBorderColor: =RGBA(0, 0, 0, 0)
             PressedFill: =RGBA(0, 0, 0, 0)
             Width: =167
-            X: =429
-            Y: =835
+            X: =451
+            Y: =850
             ZIndex: =4
 
         "'Current Trip: Sydney Tour 2024' As label":
@@ -152,7 +152,7 @@ Homepage As screen:
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Text: ="from  to "
+            Text: =" from                         to "
             Width: =284
             X: =338
             Y: =780
@@ -376,6 +376,113 @@ Homepage As screen:
             Y: =688
             ZIndex: =21
 
+        LabelCurentTrip As label:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            Size: =13
+            Text: ="Text"
+            X: =165
+            Y: =785
+            ZIndex: =22
+
+        LabelTotalBudget As label:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            Size: =13
+            Text: ="Text"
+            X: =165
+            Y: =825
+            ZIndex: =23
+
+        LabelNumberOfParticipants As label:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            Size: =13
+            Text: ="Text"
+            X: =252
+            Y: =868
+            ZIndex: =24
+
+        LabelDestination As label:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            Size: =13
+            Text: ="Text"
+            X: =165
+            Y: =914
+            ZIndex: =25
+
+        LabelHighlights As label:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            Size: =13
+            Text: ="Text"
+            X: =139
+            Y: =954
+            ZIndex: =26
+
+        LabelLength As label:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            Size: =13
+            Text: ="Text"
+            X: =425
+            Y: =800
+            ZIndex: =27
+
+        LabelStartDate As label:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            Height: =20
+            Size: =13
+            Text: ="Text"
+            Width: =98
+            X: =402
+            Y: =780
+            ZIndex: =28
+
     Alert As rectangle:
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
@@ -467,8 +574,8 @@ Homepage As screen:
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedFill: =RGBA(0, 0, 0, 0)
         Width: =110
-        X: =265
-        Y: =385
+        X: =264
+        Y: =386
         ZIndex: =9
 
     Profile_3 As image:
@@ -558,4 +665,21 @@ Homepage As screen:
         X: =76
         Y: =384
         ZIndex: =14
+
+    LabelEndDate As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =45
+        Size: =13
+        Text: ="Text"
+        Width: =109
+        X: =531
+        Y: =765
+        ZIndex: =15
 

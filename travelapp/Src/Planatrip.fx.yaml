@@ -368,9 +368,10 @@ Planatrip As screen:
         OnSelect: |-
             =Patch(TravelApp,
             Defaults(TravelApp),{
-                Trip_Name: TripNameInput.Text,
-                Duration: Value(LengthofTripInput.Text),
-                Participant: Value(ParticipantNumInput.Text)
+                'Trip :': TripNameInput.Text,
+                Date_Start: Value(LengthofTripInput.Text),
+                Participant: Value(ParticipantNumInput.Text),
+                Destination: TripDestinationInput.Text,
             })
         PaddingBottom: =12
         PaddingLeft: =56
