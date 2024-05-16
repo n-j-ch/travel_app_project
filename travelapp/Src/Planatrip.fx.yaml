@@ -116,6 +116,7 @@ Planatrip As screen:
             RadiusBottomRight: =15
             RadiusTopLeft: =15
             RadiusTopRight: =15
+            Reset: =true
             Size: =22.5
             Width: =338
             X: =163
@@ -176,6 +177,7 @@ Planatrip As screen:
             RadiusBottomRight: =15
             RadiusTopLeft: =15
             RadiusTopRight: =15
+            Reset: =true 
             Size: =22.5
             Width: =338
             X: =163
@@ -236,6 +238,7 @@ Planatrip As screen:
             RadiusBottomRight: =15
             RadiusTopLeft: =15
             RadiusTopRight: =15
+            Reset: =true
             Size: =22.5
             Width: =93
             X: =163
@@ -296,6 +299,7 @@ Planatrip As screen:
             RadiusBottomRight: =15
             RadiusTopLeft: =15
             RadiusTopRight: =15
+            Reset: =true 
             Size: =22.5
             Width: =138
             X: =109

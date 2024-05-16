@@ -1,5 +1,13 @@
 App As appinfo:
     BackEnabled: =false
+    OnStart: |-
+        =
+        Set(TransportationPercent, 0.2);
+        Set(AccommodationPercent, 0.1);
+        Set(FoodDrinkPercent, 0.2);
+        Set(EntertainmentPercent, 0.3);
+        Set(TravelAppRecord, First(TravelApp));
+        Set(NumberOfPeople, TravelAppRecord.Participant);
     Theme: =PowerAppsTheme
 
     Host As hostControl.DefaultHostControlVariant:

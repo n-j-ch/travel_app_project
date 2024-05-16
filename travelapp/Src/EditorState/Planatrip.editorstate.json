@@ -1340,7 +1340,14 @@
         "VirtualKeyboardMode",
         "Clear",
         "EnableSpellCheck",
-        "Reset",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "false",
+          "InvariantPropertyName": "Reset",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "MaxLength",
         "DelayOutput",
         "AccessibleLabel",
@@ -4215,7 +4222,14 @@
         "VirtualKeyboardMode",
         "Clear",
         "EnableSpellCheck",
-        "Reset",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "false",
+          "InvariantPropertyName": "Reset",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "MaxLength",
         "DelayOutput",
         "AccessibleLabel",
@@ -5625,7 +5639,14 @@
         "VirtualKeyboardMode",
         "Clear",
         "EnableSpellCheck",
-        "Reset",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "false",
+          "InvariantPropertyName": "Reset",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "MaxLength",
         "DelayOutput",
         "AccessibleLabel",
@@ -6001,7 +6022,14 @@
         "VirtualKeyboardMode",
         "Clear",
         "EnableSpellCheck",
-        "Reset",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "false",
+          "InvariantPropertyName": "Reset",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "MaxLength",
         "DelayOutput",
         "AccessibleLabel",
