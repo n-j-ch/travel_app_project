@@ -63,36 +63,23 @@ RealtimeTravelAlert As screen:
             Y: =146
             ZIndex: =4
 
-        TripNameInput_2 As text:
+        DatePicker3 As datepicker:
             BorderColor: =RGBA(166, 166, 166, 1)
-            BorderThickness: =2
-            Color: =RGBA(166, 166, 166, 1)
-            Default: =
+            CalendarHeaderFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+            Color: =RGBA(51, 51, 51, 1)
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
             DisabledColor: =RGBA(166, 166, 166, 1)
             DisabledFill: =RGBA(244, 244, 244, 1)
-            FocusedBorderThickness: =4
-            Height: =41
-            HintText: ="Enter date"
-            HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
-            HoverColor: =RGBA(51, 51, 51, 1)
-            HoverFill: =RGBA(255, 255, 255, 1)
-            LineHeight: =1
-            PaddingBottom: =15
-            PaddingLeft: =16
-            PaddingRight: =16
-            PaddingTop: =15
-            PressedBorderColor: =RGBA(0, 120, 212, 1)
-            PressedColor: =RGBA(51, 51, 51, 1)
-            PressedFill: =RGBA(255, 255, 255, 1)
-            RadiusBottomLeft: =15
-            RadiusBottomRight: =15
-            RadiusTopLeft: =15
-            RadiusTopRight: =15
-            Size: =22.5
-            Width: =218
+            Font: =Font.'Segoe UI'
+            Height: =34
+            HoverDateFill: =RGBA(200, 200, 200, 1)
+            IconBackground: =RGBA(0, 120, 212, 1)
+            PaddingTop: =5
+            SelectedDateFill: =RGBA(0, 120, 212, 1)
+            Size: =13
+            Width: =173
             X: =281
-            Y: =290
+            Y: =299
             ZIndex: =5
 
     msft_Label_30 As label:
@@ -454,7 +441,7 @@ RealtimeTravelAlert As screen:
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
         FocusedBorderThickness: =4
-        Height: =42
+        Height: =33
         HintText: ="Enter location"
         HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
         HoverColor: =RGBA(51, 51, 51, 1)
@@ -473,8 +460,8 @@ RealtimeTravelAlert As screen:
         RadiusTopRight: =15
         Size: =22.5
         Width: =225
-        X: =315
-        Y: =339
+        X: =317
+        Y: =345
         ZIndex: =20
 
     msft_TextInput_4 As text:

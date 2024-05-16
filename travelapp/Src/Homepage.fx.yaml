@@ -16,12 +16,12 @@ Homepage As screen:
             DisabledFill: =RGBA(166, 166, 166, 1)
             Fill: =RGBA(255, 255, 255, 0.52)
             FocusedBorderThickness: =4
-            Height: =1098
+            Height: =1085
             HoverFill: =RGBA(0, 120, 212, 1)
             PressedFill: =RGBA(0, 120, 212, 1)
             Width: =607
-            X: =20
-            Y: =20
+            X: =18
+            Y: =34
             ZIndex: =2
 
         "'Rectangle 2' As rectangle":
@@ -70,7 +70,7 @@ Homepage As screen:
             PaddingTop: =0
             Size: =15
             Text: |-
-                ="Current Trip: Sydney Tour 2024"
+                ="Current Trip: "
             Width: =295
             X: =29
             Y: =795
@@ -91,7 +91,7 @@ Homepage As screen:
             PaddingTop: =0
             Size: =15
             Text: |-
-                ="Total Budget: 0 $"
+                ="Total Budget: "
             Width: =171
             X: =29
             Y: =835
@@ -112,7 +112,7 @@ Homepage As screen:
             PaddingTop: =0
             Size: =15
             Text: |-
-                ="Destination: Sydney, Australia"
+                ="Destination: "
             Width: =295
             X: =29
             Y: =924
@@ -125,17 +125,18 @@ Homepage As screen:
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
             DisabledColor: =RGBA(166, 166, 166, 1)
             FocusedBorderThickness: =4
-            Height: =45
+            Height: =58
             LineHeight: =1
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
+            Size: =15
             Text: |-
-                ="Highlights: Opera House , Harbour Bridge..."
-            Width: =411
+                ="Highlights: "
+            Width: =422
             X: =29
-            Y: =957
+            Y: =944
             ZIndex: =8
 
         Dates As label:
@@ -151,7 +152,7 @@ Homepage As screen:
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Text: ="from 01/01/2024 to 03/01/2024"
+            Text: ="from  to "
             Width: =284
             X: =338
             Y: =780
@@ -171,7 +172,7 @@ Homepage As screen:
             PaddingRight: =0
             PaddingTop: =0
             Text: |-
-                ="Length: 3 Days"
+                ="Length: "
             Width: =134
             X: =338
             Y: =800
@@ -192,7 +193,7 @@ Homepage As screen:
             PaddingTop: =0
             Size: =15
             Text: |-
-                ="Number of Participant: 1"
+                ="Number of Participant: "
             Width: =242
             X: =29
             Y: =879

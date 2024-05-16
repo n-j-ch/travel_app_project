@@ -4041,19 +4041,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Planatrip.'Starting date'.TripNameInput_3.AccessibleLabel"
+                  "fullyQualifiedName": "RealtimeTravelAlert.Backgroud_5.DatePicker3.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Planatrip.'Starting date'.TripNameInput_3.AccessibleLabel",
+                  "fullyQualifiedName": "RealtimeTravelAlert.Backgroud_5.DatePicker3.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Planatrip",
-                "type": "Planatrip.'Starting date'.TripNameInput_3"
+                "module": "RealtimeTravelAlert",
+                "type": "RealtimeTravelAlert.Backgroud_5.DatePicker3"
               }
             }
           ],
@@ -4251,19 +4251,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "RealtimeTravelAlert.Backgroud_5.TripNameInput_2.AccessibleLabel"
+                  "fullyQualifiedName": "Planatrip.'Starting date'.DatePicker2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "RealtimeTravelAlert.Backgroud_5.TripNameInput_2.AccessibleLabel",
+                  "fullyQualifiedName": "Planatrip.'Starting date'.DatePicker2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "RealtimeTravelAlert",
-                "type": "RealtimeTravelAlert.Backgroud_5.TripNameInput_2"
+                "module": "Planatrip",
+                "type": "Planatrip.'Starting date'.DatePicker2"
               }
             }
           ],

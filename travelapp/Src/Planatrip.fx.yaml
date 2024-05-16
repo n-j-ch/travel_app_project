@@ -330,36 +330,22 @@ Planatrip As screen:
             Y: =15
             ZIndex: =21
 
-        TripNameInput_3 As text:
+        DatePicker2 As datepicker:
             BorderColor: =RGBA(166, 166, 166, 1)
-            BorderThickness: =2
-            Color: =RGBA(166, 166, 166, 1)
-            Default: =
+            CalendarHeaderFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+            Color: =RGBA(51, 51, 51, 1)
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
             DisabledColor: =RGBA(166, 166, 166, 1)
             DisabledFill: =RGBA(244, 244, 244, 1)
-            FocusedBorderThickness: =4
-            Height: =55
-            HintText: ="Enter start date"
-            HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
-            HoverColor: =RGBA(51, 51, 51, 1)
-            HoverFill: =RGBA(255, 255, 255, 1)
-            LineHeight: =1
-            PaddingBottom: =15
-            PaddingLeft: =16
-            PaddingRight: =16
-            PaddingTop: =15
-            PressedBorderColor: =RGBA(0, 120, 212, 1)
-            PressedColor: =RGBA(51, 51, 51, 1)
-            PressedFill: =RGBA(255, 255, 255, 1)
-            RadiusBottomLeft: =15
-            RadiusBottomRight: =15
-            RadiusTopLeft: =15
-            RadiusTopRight: =15
-            Size: =22.5
+            Font: =Font.'Segoe UI'
+            Height: =58
+            HoverDateFill: =RGBA(200, 200, 200, 1)
+            IconBackground: =RGBA(0, 120, 212, 1)
+            PaddingTop: =5
+            SelectedDateFill: =RGBA(0, 120, 212, 1)
+            Size: =13
             Width: =338
             X: =163
-            Y: =2
             ZIndex: =22
 
     SaveButton As button:
