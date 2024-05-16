@@ -1,0 +1,489 @@
+TravelBudgeting As screen:
+    Height: =1136
+    LoadingSpinnerColor: =RGBA(0, 120, 212, 1)
+    Width: =640
+
+    Backgroud_2 As groupContainer.manualLayoutContainer:
+        Fill: =RGBA(153, 201, 238, 1)
+        Height: =1136
+        LayoutMode: ="manual"
+        Width: =640
+        ZIndex: =1
+
+        "'Rectangle 1_2' As rectangle":
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            DisabledFill: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(255, 255, 255, 0.52)
+            FocusedBorderThickness: =4
+            Height: =1098
+            HoverFill: =RGBA(0, 120, 212, 1)
+            PressedFill: =RGBA(0, 120, 212, 1)
+            Width: =607
+            X: =17
+            Y: =19
+            ZIndex: =2
+
+        msft_Label_11 As label:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Height: =100
+            LineHeight: =2.218
+            PaddingBottom: =15
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =15
+            Size: =33.75
+            Text: ="Trip Budgeting"
+            Width: =330
+            X: =39
+            Y: =34
+            ZIndex: =3
+
+        "'Line 1_2' As image":
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
+            Height: =0
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Image: =image2739102
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            Width: =525
+            X: =39
+            Y: =146
+            ZIndex: =4
+
+    Budget_1 As groupContainer.manualLayoutContainer:
+        Height: =55
+        LayoutMode: ="manual"
+        Width: =550
+        X: =39
+        Y: =220
+        ZIndex: =5
+
+        msft_Label_12 As label:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            LineHeight: =1
+            PaddingBottom: =15
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =15
+            Size: =22.5
+            Text: |-
+                ="Budget range:"
+            Width: =212
+            Y: =7
+            ZIndex: =6
+
+        msft_TextInput_3 As text:
+            BorderColor: =RGBA(166, 166, 166, 1)
+            BorderThickness: =2
+            Color: =RGBA(166, 166, 166, 1)
+            Default: =
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            FocusedBorderThickness: =4
+            Height: =55
+            HintText: ="Select budget range"
+            HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+            HoverColor: =RGBA(51, 51, 51, 1)
+            HoverFill: =RGBA(255, 255, 255, 1)
+            LineHeight: =1
+            PaddingBottom: =15
+            PaddingLeft: =16
+            PaddingRight: =16
+            PaddingTop: =15
+            PressedBorderColor: =RGBA(0, 120, 212, 1)
+            PressedColor: =RGBA(51, 51, 51, 1)
+            PressedFill: =RGBA(255, 255, 255, 1)
+            RadiusBottomLeft: =15
+            RadiusBottomRight: =15
+            RadiusTopLeft: =15
+            RadiusTopRight: =15
+            Size: =22.5
+            Width: =338
+            X: =212
+            ZIndex: =7
+
+    Budget_2 As groupContainer.manualLayoutContainer:
+        Height: =601
+        LayoutMode: ="manual"
+        Width: =579
+        X: =33
+        Y: =311
+        ZIndex: =8
+
+        msft_Label_13 As label:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Height: =61
+            LineHeight: =1
+            PaddingBottom: =15
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =15
+            Size: =25
+            Text: ="Estimated Budget (Per Person)"
+            Width: =570
+            X: =6
+            Y: =15
+            ZIndex: =9
+
+        Transportation As groupContainer.manualLayoutContainer:
+            Height: =30
+            LayoutMode: ="manual"
+            Width: =525
+            X: =6
+            Y: =110
+            ZIndex: =10
+
+            "'String-label' As label":
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                Color: =RGBA(51, 51, 51, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Height: =30
+                LineHeight: =1
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =22.5
+                Text: |-
+                    ="Transportation:"
+                Width: =227
+                ZIndex: =11
+
+            "'String-label_1' As label":
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                Color: =RGBA(51, 51, 51, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Height: =30
+                LineHeight: =1
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =22.5
+                Text: ="0 AUD"
+                Width: =90
+                X: =439
+                ZIndex: =12
+
+        Accommodation As groupContainer.manualLayoutContainer:
+            Height: =30
+            LayoutMode: ="manual"
+            Width: =525
+            X: =6
+            Y: =174
+            ZIndex: =13
+
+            "'String-label_2' As label":
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                Color: =RGBA(51, 51, 51, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Height: =30
+                LineHeight: =1
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =22.5
+                Text: ="0 AUD"
+                Width: =90
+                X: =439
+                ZIndex: =14
+
+            "'String-label_3' As label":
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                Color: =RGBA(51, 51, 51, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Height: =30
+                LineHeight: =1
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =22.5
+                Text: |-
+                    ="Accommodation:"
+                Width: =249
+                ZIndex: =15
+
+        "'Food & Drink' As groupContainer.manualLayoutContainer":
+            Height: =30
+            LayoutMode: ="manual"
+            Width: =525
+            X: =6
+            Y: =238
+            ZIndex: =16
+
+            "'String-label_4' As label":
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                Color: =RGBA(51, 51, 51, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Height: =30
+                LineHeight: =1
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =22.5
+                Text: ="0 AUD"
+                Width: =90
+                X: =439
+                ZIndex: =17
+
+            "'String-label_5' As label":
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                Color: =RGBA(51, 51, 51, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Height: =30
+                LineHeight: =1
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =22.5
+                Text: |-
+                    ="Food & Drink:"
+                Width: =202
+                ZIndex: =18
+
+        "'Tourism fee' As groupContainer.manualLayoutContainer":
+            Height: =30
+            LayoutMode: ="manual"
+            Width: =525
+            X: =6
+            Y: =304
+            ZIndex: =19
+
+            "'String-label_6' As label":
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                Color: =RGBA(51, 51, 51, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Height: =30
+                LineHeight: =1
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =22.5
+                Text: ="0 AUD"
+                Width: =90
+                X: =439
+                ZIndex: =20
+
+            "'String-label_7' As label":
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                Color: =RGBA(51, 51, 51, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Height: =30
+                LineHeight: =1
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =22.5
+                Text: |-
+                    ="Tourism Fee:"
+                Width: =197
+                ZIndex: =21
+
+        Entertainment As groupContainer.manualLayoutContainer:
+            Height: =30
+            LayoutMode: ="manual"
+            Width: =525
+            X: =6
+            Y: =370
+            ZIndex: =22
+
+            "'String-label_8' As label":
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                Color: =RGBA(51, 51, 51, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Height: =30
+                LineHeight: =1
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =22.5
+                Text: ="0 AUD"
+                Width: =90
+                X: =439
+                ZIndex: =23
+
+            "'String-label_9' As label":
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                Color: =RGBA(51, 51, 51, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Height: =30
+                LineHeight: =1
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =22.5
+                Text: |-
+                    ="Entertainment:"
+                Width: =226
+                ZIndex: =24
+
+        "'Total ' As groupContainer.manualLayoutContainer":
+            Height: =39
+            LayoutMode: ="manual"
+            Width: =525
+            X: =6
+            Y: =464
+            ZIndex: =25
+
+            "'String-label_10' As label":
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                Color: =RGBA(51, 51, 51, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Height: =30
+                LineHeight: =1
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =22.5
+                Text: ="0 AUD"
+                Width: =90
+                X: =439
+                ZIndex: =26
+
+            "'String-label_11' As label":
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                Color: =RGBA(51, 51, 51, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Height: =30
+                LineHeight: =1
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =22.5
+                Text: |-
+                    ="Total per person: "
+                Width: =245
+                ZIndex: =27
+
+        "'Total _1' As groupContainer.manualLayoutContainer":
+            Height: =30
+            LayoutMode: ="manual"
+            Width: =525
+            X: =6
+            Y: =526
+            ZIndex: =28
+
+            "'String-label_12' As label":
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                Color: =RGBA(51, 51, 51, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Height: =30
+                LineHeight: =1
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =22.5
+                Text: ="0 AUD"
+                Width: =90
+                X: =439
+                ZIndex: =29
+
+            "'String-label_13' As label":
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                Color: =RGBA(51, 51, 51, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Height: =30
+                LineHeight: =1
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =22.5
+                Text: |-
+                    ="Trip Total: "
+                ZIndex: =30
+
+    Alert_2 As image:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =65.24633026123047
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Image: =image2731217
+        OnSelect: =Navigate(Homepage)
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =87.70574188232422
+        X: =540
+        Y: =19
+        ZIndex: =9
+

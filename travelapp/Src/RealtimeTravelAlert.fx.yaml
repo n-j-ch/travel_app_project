@@ -1,0 +1,534 @@
+RealtimeTravelAlert As screen:
+    Height: =1136
+    LoadingSpinnerColor: =RGBA(0, 120, 212, 1)
+    OnVisible: =
+    Width: =640
+
+    Backgroud_5 As groupContainer.manualLayoutContainer:
+        Fill: =RGBA(153, 201, 238, 1)
+        Height: =1136
+        LayoutMode: ="manual"
+        Width: =640
+        ZIndex: =1
+
+        "'Rectangle 1_5' As rectangle":
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            DisabledFill: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(255, 255, 255, 0.52)
+            FocusedBorderThickness: =4
+            Height: =1098
+            HoverFill: =RGBA(0, 120, 212, 1)
+            PressedFill: =RGBA(0, 120, 212, 1)
+            Width: =607
+            X: =16
+            Y: =12
+            ZIndex: =2
+
+        msft_Label_29 As label:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Height: =100
+            LineHeight: =2.218
+            PaddingBottom: =15
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =15
+            Size: =33.75
+            Text: ="Travel Alert"
+            Width: =242
+            X: =39
+            Y: =46
+            ZIndex: =3
+
+        "'Line 1_6' As image":
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
+            Height: =0
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Image: =image274136
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            Width: =525
+            X: =39
+            Y: =146
+            ZIndex: =4
+
+        TripNameInput_2 As text:
+            BorderColor: =RGBA(166, 166, 166, 1)
+            BorderThickness: =2
+            Color: =RGBA(166, 166, 166, 1)
+            Default: =
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            FocusedBorderThickness: =4
+            Height: =41
+            HintText: ="Enter date"
+            HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+            HoverColor: =RGBA(51, 51, 51, 1)
+            HoverFill: =RGBA(255, 255, 255, 1)
+            LineHeight: =1
+            PaddingBottom: =15
+            PaddingLeft: =16
+            PaddingRight: =16
+            PaddingTop: =15
+            PressedBorderColor: =RGBA(0, 120, 212, 1)
+            PressedColor: =RGBA(51, 51, 51, 1)
+            PressedFill: =RGBA(255, 255, 255, 1)
+            RadiusBottomLeft: =15
+            RadiusBottomRight: =15
+            RadiusTopLeft: =15
+            RadiusTopRight: =15
+            Size: =22.5
+            Width: =218
+            X: =281
+            Y: =290
+            ZIndex: =5
+
+    msft_Label_30 As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Height: =57
+        LineHeight: =1
+        PaddingBottom: =15
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =15
+        Size: =30
+        Text: |-
+            ="Destination: Sydney, Australia"
+        Width: =571
+        X: =42
+        Y: =161
+        ZIndex: =2
+
+    msft_Label_32 As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        LineHeight: =1
+        PaddingBottom: =15
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =15
+        Size: =30
+        Text: ="Weather"
+        Width: =162
+        X: =39
+        Y: =237
+        ZIndex: =3
+
+    msft_Label_33 As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Height: =70
+        LineHeight: =1
+        PaddingBottom: =15
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =15
+        Size: =30
+        Text: ="Flight Tracking"
+        Width: =306
+        X: =35
+        Y: =732
+        ZIndex: =4
+
+    msft_Label_34 As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Height: =52
+        LineHeight: =1
+        PaddingBottom: =15
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =15
+        Size: =30
+        Text: ="Emergency"
+        Width: =214
+        X: =39
+        Y: =504
+        ZIndex: =5
+
+    "'Rectangle 9' As rectangle":
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        DisabledFill: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        FocusedBorderThickness: =4
+        Height: =126
+        HoverFill: =RGBA(0, 120, 212, 1)
+        PressedFill: =RGBA(0, 120, 212, 1)
+        Width: =126
+        X: =43
+        Y: =330
+        ZIndex: =6
+
+    "'Rectangle 2_1' As rectangle":
+        BorderColor: =RGBA(0, 0, 0, 0.25)
+        BorderThickness: =2
+        DisabledFill: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(255, 255, 255, 0.52)
+        FocusedBorderThickness: =4
+        Height: =175
+        HoverFill: =RGBA(0, 120, 212, 1)
+        PressedFill: =RGBA(0, 120, 212, 1)
+        Width: =594
+        X: =24
+        Y: =903
+        ZIndex: =7
+
+    "'Flight XXXXX' As label":
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Height: =20
+        LineHeight: =1
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        Size: =15
+        Text: ="Flight XXXXX"
+        Width: =141
+        X: =42
+        Y: =916
+        ZIndex: =8
+
+    "'From: ________ To: Kingsford Smith Airport , Australia' As label":
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Height: =20
+        LineHeight: =1
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        Size: =15
+        Text: |-
+            ="From: ________    To: Kingsford Smith Airport , Australia"
+        Width: =538
+        X: =43
+        Y: =947
+        ZIndex: =9
+
+    "'Departure time: 12:00 pm Arrival time: 16:00 pm' As label":
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Height: =20
+        LineHeight: =1
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        Size: =15
+        Text: |-
+            ="Departure time: 12:00 pm    Arrival time: 16:00 pm"
+        Width: =486
+        X: =42
+        Y: =981
+        ZIndex: =10
+
+    "'Status: On time' As label":
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Height: =20
+        LineHeight: =1
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        Size: =15
+        Text: |-
+            ="Status: On time"
+        Width: =153
+        X: =43
+        Y: =1015
+        ZIndex: =11
+
+    "'Recent earthquake (last occurred 10/12/2023)_1' As label":
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Height: =24
+        LineHeight: =1
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        Size: =18
+        Text: ="Recent earthquake     (last occurred 10/12/2023)"
+        Width: =578
+        X: =39
+        Y: =588
+        ZIndex: =12
+
+    "'Weather: Partly Cloudy' As label":
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Height: =24
+        LineHeight: =1
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        Size: =18
+        Text: |-
+            ="Weather: Partly Cloudy"
+        Width: =266
+        X: =208
+        Y: =394
+        ZIndex: =13
+
+    "'Average Temperature: 24 °C' As label":
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Height: =35
+        LineHeight: =1
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        Size: =18
+        Text: |-
+            ="Average Temperature:  24 °C"
+        Width: =330
+        X: =208
+        Y: =425
+        ZIndex: =14
+
+    "'Date: 1/1/2024' As label":
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Height: =24
+        LineHeight: =1
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        Size: =18
+        Text: |-
+            ="Date: "
+        Width: =169
+        X: =208
+        Y: =305
+        ZIndex: =15
+
+    "'Location: Sydney, Australia' As label":
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Height: =24
+        LineHeight: =1
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        Size: =18
+        Text: |-
+            ="Location: "
+        Width: =312
+        X: =205
+        Y: =348
+        ZIndex: =16
+
+    "'Recent storm (last occurred 27/12/2023)' As label":
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Height: =24
+        LineHeight: =1
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        Size: =18
+        Text: ="Recent storm               (last occurred 27/12/2023)"
+        Width: =541
+        X: =39
+        Y: =628
+        ZIndex: =17
+
+    "'image 1' As image":
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =83
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Image: =image276149
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =118
+        X: =47
+        Y: =348
+        ZIndex: =18
+
+    Alert_5 As image:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =65.24633026123047
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Image: =image2731217
+        OnSelect: =Navigate(Homepage)
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =87.70574188232422
+        X: =540
+        Y: =19
+        ZIndex: =19
+
+    TripNameInput_1 As text:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        BorderThickness: =2
+        Color: =RGBA(166, 166, 166, 1)
+        Default: =
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Height: =42
+        HintText: ="Enter location"
+        HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+        HoverColor: =RGBA(51, 51, 51, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        LineHeight: =1
+        PaddingBottom: =15
+        PaddingLeft: =16
+        PaddingRight: =16
+        PaddingTop: =15
+        PressedBorderColor: =RGBA(0, 120, 212, 1)
+        PressedColor: =RGBA(51, 51, 51, 1)
+        PressedFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =15
+        RadiusBottomRight: =15
+        RadiusTopLeft: =15
+        RadiusTopRight: =15
+        Size: =22.5
+        Width: =225
+        X: =315
+        Y: =339
+        ZIndex: =20
+
+    msft_TextInput_4 As text:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        BorderThickness: =2
+        Color: =RGBA(166, 166, 166, 1)
+        Default: =
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Height: =69
+        HintText: |+
+            ="Enter flight number"
+            
+        HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+        HoverColor: =RGBA(51, 51, 51, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        LineHeight: =1
+        PaddingBottom: =15
+        PaddingLeft: =16
+        PaddingRight: =16
+        PaddingTop: =15
+        PressedBorderColor: =RGBA(0, 120, 212, 1)
+        PressedColor: =RGBA(51, 51, 51, 1)
+        PressedFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =15
+        RadiusBottomRight: =15
+        RadiusTopLeft: =15
+        RadiusTopRight: =15
+        Size: =22.5
+        Width: =333
+        X: =263
+        Y: =804
+        ZIndex: =21
+
+    msft_Label_35 As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Height: =69
+        LineHeight: =1
+        PaddingBottom: =15
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =15
+        Size: =22.5
+        Text: |-
+            ="Flight number:"
+        Width: =213
+        X: =40
+        Y: =804
+        ZIndex: =23
+
