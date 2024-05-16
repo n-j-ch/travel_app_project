@@ -5703,14 +5703,7 @@
         "RadiusTopRight",
         "Visible",
         "Format",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "\"Enter name\"",
-          "InvariantPropertyName": "HintText",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "HintText",
         "Mode",
         "FocusedBorderThickness",
         "HoverBorderColor",
