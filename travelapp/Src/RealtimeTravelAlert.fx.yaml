@@ -483,7 +483,7 @@ RealtimeTravelAlert As screen:
         LineHeight: =1
         OnChange: |
             =Set(FlightNumber, FlightNumberInput.Text);
-            Set(FlightDetails, LookUp(TravelApp, Flight_Number = FlightNumber))
+            ///Set(FlightDetails, LookUp(TravelApp, Flight_Number = FlightNumber))
         PaddingBottom: =15
         PaddingLeft: =16
         PaddingRight: =16
