@@ -82,27 +82,6 @@ RealtimeTravelAlert As screen:
             Y: =299
             ZIndex: =5
 
-    msft_Label_30 As label:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        Color: =RGBA(51, 51, 51, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        FocusedBorderThickness: =4
-        Height: =57
-        LineHeight: =1
-        PaddingBottom: =15
-        PaddingLeft: =0
-        PaddingRight: =0
-        PaddingTop: =15
-        Size: =30
-        Text: |-
-            ="Destination: Sydney, Australia"
-        Width: =571
-        X: =42
-        Y: =161
-        ZIndex: =2
-
     msft_Label_32 As label:
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
@@ -483,17 +462,7 @@ RealtimeTravelAlert As screen:
         LineHeight: =1
         OnChange: |-
             =Set(FlightNumber, FlightNumberInput.Text);
-            If(
-                IsBlank(FlightNumber), 
-                Set(FlightDetails, {
-                    FlightFrom: "",
-                    FlightTo: "",
-                    DepartureTime: Date(1970, 1, 1),
-                    ArrivalTime: Date(1970, 1, 1),
-                    Status: ""
-                }),
-                Set(FlightDetails, First(Filter(TravelApp, Flight_Number = FlightNumber)))
-            );
+            Set(FlightDetails, LookUp(TravelApp, Flight_Number = FlightNumber));
         PaddingBottom: =15
         PaddingLeft: =16
         PaddingRight: =16
