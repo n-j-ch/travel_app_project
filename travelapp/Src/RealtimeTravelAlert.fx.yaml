@@ -429,8 +429,8 @@ RealtimeTravelAlert As screen:
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedFill: =RGBA(0, 0, 0, 0)
         Width: =87.70574188232422
-        X: =540
-        Y: =19
+        X: =517
+        Y: =20
         ZIndex: =19
 
     TripNameInput_1 As text:

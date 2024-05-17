@@ -4250,7 +4250,7 @@
       "MetaDataIDKey": "",
       "Name": "LabelFeedbackText",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 4,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6262,7 +6262,7 @@
       "MetaDataIDKey": "",
       "Name": "msft_Label_32",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7564,7 +7564,7 @@
       "MetaDataIDKey": "",
       "Name": "Rating1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
