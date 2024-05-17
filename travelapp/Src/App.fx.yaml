@@ -8,6 +8,14 @@ App As appinfo:
         Set(EntertainmentPercent, 0.3);
         Set(TravelAppRecord, First(TravelApp));
         Set(NumberOfPeople, TravelAppRecord.Participant);
+        Set(FlightNumber, "");
+        Set(FlightDetails, {
+            From: "",
+            To: "",
+            DepartureTime: Date(1970, 1, 1),
+            ArrivalTime: Date(1970, 1, 1),
+            Status: ""
+        });
     Theme: =PowerAppsTheme
 
     Host As hostControl.DefaultHostControlVariant:
