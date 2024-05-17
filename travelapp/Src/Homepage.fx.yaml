@@ -165,17 +165,17 @@ Homepage As screen:
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
             DisabledColor: =RGBA(166, 166, 166, 1)
             FocusedBorderThickness: =4
-            Height: =35
+            Height: =25
             LineHeight: =1
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
             Text: |-
-                ="Length: "
-            Width: =134
+                ="Length:           days."
+            Width: =234
             X: =338
-            Y: =800
+            Y: =805
             ZIndex: =10
 
         "'Participant num' As label":
@@ -380,14 +380,14 @@ Homepage As screen:
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
             BorderThickness: =2
-            Color: =RGBA(51, 51, 51, 1)
+            Color: =RGBA(0, 42, 74, 1)
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
             DisabledColor: =RGBA(166, 166, 166, 1)
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
-            Size: =13
+            Size: =15
             Text: =CurrentTrip
-            X: =165
+            X: =159
             Y: =785
             ZIndex: =22
 
@@ -411,12 +411,12 @@ Homepage As screen:
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
             BorderThickness: =2
-            Color: =RGBA(51, 51, 51, 1)
+            Color: =RGBA(0, 42, 74, 1)
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
             DisabledColor: =RGBA(166, 166, 166, 1)
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
-            Size: =13
+            Size: =15
             Text: =NumberOfParticipants
             X: =252
             Y: =868
@@ -426,12 +426,12 @@ Homepage As screen:
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
             BorderThickness: =2
-            Color: =RGBA(51, 51, 51, 1)
+            Color: =RGBA(0, 42, 74, 1)
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
             DisabledColor: =RGBA(166, 166, 166, 1)
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
-            Size: =13
+            Size: =15
             Text: =DestinationVar 
             X: =165
             Y: =914
@@ -456,15 +456,16 @@ Homepage As screen:
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
             BorderThickness: =2
-            Color: =RGBA(51, 51, 51, 1)
+            Color: =RGBA(0, 42, 74, 1)
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
             DisabledColor: =RGBA(166, 166, 166, 1)
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
-            Size: =13
+            Size: =15
             Text: =TripLength
-            X: =425
-            Y: =800
+            Width: =67
+            X: =405
+            Y: =797
             ZIndex: =27
 
         LabelStartDate As label:
@@ -478,10 +479,10 @@ Homepage As screen:
             Font: =Font.'Segoe UI'
             Height: =20
             Size: =13
-            Text: ="Text"
-            Width: =98
-            X: =402
-            Y: =780
+            Text: =StartDateVar
+            Width: =118
+            X: =396
+            Y: =781
             ZIndex: =28
 
     Alert As rectangle:
@@ -678,9 +679,9 @@ Homepage As screen:
         Font: =Font.'Segoe UI'
         Height: =45
         Size: =13
-        Text: ="Text"
+        Text: =EndDateVar
         Width: =109
-        X: =531
-        Y: =765
+        X: =525
+        Y: =768
         ZIndex: =15
 

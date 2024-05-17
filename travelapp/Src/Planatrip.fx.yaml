@@ -62,6 +62,46 @@ Planatrip As screen:
             Y: =146
             ZIndex: =4
 
+        msft_Label_12 As label:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Height: =30
+            LineHeight: =1
+            PaddingBottom: =15
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =15
+            Size: =22.5
+            Text: |-
+                ="End Date:"
+            Width: =163
+            X: =39
+            Y: =551
+            ZIndex: =5
+
+        DatePickerEND As datepicker:
+            BorderColor: =RGBA(166, 166, 166, 1)
+            CalendarHeaderFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Font: =Font.'Segoe UI'
+            Height: =58
+            HoverDateFill: =RGBA(200, 200, 200, 1)
+            IconBackground: =RGBA(0, 120, 212, 1)
+            PaddingTop: =5
+            SelectedDateFill: =RGBA(0, 120, 212, 1)
+            Size: =13
+            Width: =338
+            X: =202
+            Y: =537
+            ZIndex: =6
+
     Trip As groupContainer.manualLayoutContainer:
         Height: =58
         LayoutMode: ="manual"
@@ -245,67 +285,6 @@ Planatrip As screen:
             Y: =2
             ZIndex: =17
 
-    Length As groupContainer.manualLayoutContainer:
-        Height: =59
-        LayoutMode: ="manual"
-        Width: =247
-        X: =317
-        Y: =382
-        ZIndex: =17
-
-        msft_Label_9 As label:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            Color: =RGBA(51, 51, 51, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FocusedBorderThickness: =4
-            Height: =44
-            LineHeight: =1
-            PaddingBottom: =15
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =15
-            Size: =22.5
-            Text: |-
-                ="Length:"
-            Width: =109
-            Y: =8
-            ZIndex: =18
-
-        LengthofTripInput As text:
-            BorderColor: =RGBA(166, 166, 166, 1)
-            BorderThickness: =2
-            Color: =RGBA(166, 166, 166, 1)
-            Default: ="0"
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            DisabledFill: =RGBA(244, 244, 244, 1)
-            FocusedBorderThickness: =4
-            Height: =55
-            HintText: ="0"
-            HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
-            HoverColor: =RGBA(51, 51, 51, 1)
-            HoverFill: =RGBA(255, 255, 255, 1)
-            LineHeight: =1
-            PaddingBottom: =15
-            PaddingLeft: =16
-            PaddingRight: =16
-            PaddingTop: =15
-            PressedBorderColor: =RGBA(0, 120, 212, 1)
-            PressedColor: =RGBA(51, 51, 51, 1)
-            PressedFill: =RGBA(255, 255, 255, 1)
-            RadiusBottomLeft: =15
-            RadiusBottomRight: =15
-            RadiusTopLeft: =15
-            RadiusTopRight: =15
-            Reset: =true 
-            Size: =22.5
-            Width: =138
-            X: =109
-            Y: =4
-            ZIndex: =19
-
     "'Starting date' As groupContainer.manualLayoutContainer":
         Height: =58
         LayoutMode: ="manual"
@@ -365,7 +344,7 @@ Planatrip As screen:
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
-        OnSelect: |
+        OnSelect: |-
             =Patch(TravelApp,
             Defaults(TravelApp),{
                 'Trip :': TripNameInput.Text,
@@ -375,9 +354,13 @@ Planatrip As screen:
             });
             Set(CurrentTrip, TripNameInput.Text);
             Set(NumberOfParticipants, Value(ParticipantNumInput.Text));
-            Set(DestinationVar, TripDestinationInput.Text); // Use a different name for the variable
-            Set(TripLength, Value(LengthofTripInput.Text)); // Convert to numeric value
-            Navigate(Homepage); // Replace HomePage with the actual name of your homepage screen
+            Set(DestinationVar, TripDestinationInput.Text); 
+            //Set(TripLength, Value(LengthofTripInput.Text)); 
+            Set(StartDateVar, DatePicker2.SelectedDate);
+            Set(EndDateVar, DatePickerEND.SelectedDate);
+            
+            
+            Navigate(Homepage); 
         PaddingBottom: =12
         PaddingLeft: =56
         PaddingRight: =56
@@ -394,7 +377,7 @@ Planatrip As screen:
         VerticalAlign: =VerticalAlign.Top
         Width: =202
         X: =219
-        Y: =593
+        Y: =662
         ZIndex: =25
 
     BackButton As image:
