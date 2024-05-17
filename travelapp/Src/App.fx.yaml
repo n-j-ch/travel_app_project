@@ -10,8 +10,8 @@ App As appinfo:
         Set(NumberOfPeople, TravelAppRecord.Participant);
         Set(FlightNumber, "");
         Set(FlightDetails, {
-            From: "",
-            To: "",
+            FlightFrom: "",
+            FlightTo: "",
             DepartureTime: Date(1970, 1, 1),
             ArrivalTime: Date(1970, 1, 1),
             Status: ""
