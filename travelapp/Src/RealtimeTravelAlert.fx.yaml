@@ -481,9 +481,19 @@ RealtimeTravelAlert As screen:
         HoverColor: =RGBA(51, 51, 51, 1)
         HoverFill: =RGBA(255, 255, 255, 1)
         LineHeight: =1
-        OnChange: |
+        OnChange: |-
             =Set(FlightNumber, FlightNumberInput.Text);
-            Set(FlightDetails, LookUp(TravelApp, Flight_Number = FlightNumber))
+            If(
+                IsBlank(FlightNumber), 
+                Set(FlightDetails, {
+                    FlightFrom: "",
+                    FlightTo: "",
+                    DepartureTime: Date(1970, 1, 1),
+                    ArrivalTime: Date(1970, 1, 1),
+                    Status: ""
+                }),
+                Set(FlightDetails, First(Filter(TravelApp, Flight_Number = FlightNumber)))
+            );
         PaddingBottom: =15
         PaddingLeft: =16
         PaddingRight: =16
