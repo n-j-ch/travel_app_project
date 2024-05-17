@@ -277,7 +277,7 @@ Planatrip As screen:
             BorderColor: =RGBA(166, 166, 166, 1)
             BorderThickness: =2
             Color: =RGBA(166, 166, 166, 1)
-            Default: =
+            Default: ="0"
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
             DisabledColor: =RGBA(166, 166, 166, 1)
             DisabledFill: =RGBA(244, 244, 244, 1)
@@ -365,15 +365,19 @@ Planatrip As screen:
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
-        OnSelect: |-
+        OnSelect: |
             =Patch(TravelApp,
             Defaults(TravelApp),{
                 'Trip :': TripNameInput.Text,
                 Date_Start:DatePicker2.SelectedDate,
                 Participant: Value(ParticipantNumInput.Text),
-                Destination : TripDestinationInput.Text,
-                Duration: Value(LengthofTripInput.Text)
-            })
+                Destination : TripDestinationInput.Text
+            });
+            Set(CurrentTrip, TripNameInput.Text);
+            Set(NumberOfParticipants, Value(ParticipantNumInput.Text));
+            Set(DestinationVar, TripDestinationInput.Text); // Use a different name for the variable
+            Set(TripLength, Value(LengthofTripInput.Text)); // Convert to numeric value
+            Navigate(Homepage); // Replace HomePage with the actual name of your homepage screen
         PaddingBottom: =12
         PaddingLeft: =56
         PaddingRight: =56

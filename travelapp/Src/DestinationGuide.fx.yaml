@@ -238,27 +238,6 @@ DestinationGuide As screen:
         Y: =312
         ZIndex: =12
 
-    msft_Label_24 As label:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        Color: =RGBA(3.640315, 148.454, 229.91168, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        FocusedBorderThickness: =4
-        Height: =54
-        LineHeight: =1
-        PaddingBottom: =15
-        PaddingLeft: =0
-        PaddingRight: =0
-        PaddingTop: =15
-        Size: =18
-        Text: |-
-            =Launch("https://maps.google.com/?q=Google+maps")
-        Width: =211
-        X: =177
-        Y: =533
-        ZIndex: =14
-
     msft_Label_27 As label:
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
@@ -444,7 +423,7 @@ DestinationGuide As screen:
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
-        OnSelect: |-
+        OnSelect: |
             =Launch("https://maps.google.com/?q=Google+maps")
         PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
         PressedColor: =RGBA(255, 255, 255, 1)

@@ -1294,7 +1294,14 @@
         "BorderColor",
         "BorderStyle",
         "BorderThickness",
-        "Default",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Default",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "DisabledBorderColor",
         "DisabledColor",
         "DisabledFill",

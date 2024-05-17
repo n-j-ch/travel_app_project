@@ -386,7 +386,7 @@ Homepage As screen:
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             Size: =13
-            Text: ="Text"
+            Text: =CurrentTrip
             X: =165
             Y: =785
             ZIndex: =22
@@ -401,7 +401,8 @@ Homepage As screen:
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             Size: =13
-            Text: ="Text"
+            Text: |
+                =""
             X: =165
             Y: =825
             ZIndex: =23
@@ -416,7 +417,7 @@ Homepage As screen:
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             Size: =13
-            Text: ="Text"
+            Text: =NumberOfParticipants
             X: =252
             Y: =868
             ZIndex: =24
@@ -431,7 +432,7 @@ Homepage As screen:
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             Size: =13
-            Text: ="Text"
+            Text: =DestinationVar 
             X: =165
             Y: =914
             ZIndex: =25
@@ -446,7 +447,7 @@ Homepage As screen:
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             Size: =13
-            Text: ="Text"
+            Text: =""
             X: =139
             Y: =954
             ZIndex: =26
@@ -461,7 +462,7 @@ Homepage As screen:
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             Size: =13
-            Text: ="Text"
+            Text: =TripLength
             X: =425
             Y: =800
             ZIndex: =27
