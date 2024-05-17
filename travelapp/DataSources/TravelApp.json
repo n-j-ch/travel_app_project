@@ -28,6 +28,7 @@
       "Budget": "Budget",
       "ComplianceAssetId": "Compliance Asset Id",
       "Created": "Created",
+      "Date_End": "Date_End",
       "Destination": "Destination",
       "Duration": "Date_Start",
       "Duration0": "Duration (Duration0)",

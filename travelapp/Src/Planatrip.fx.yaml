@@ -349,8 +349,10 @@ Planatrip As screen:
             Defaults(TravelApp),{
                 'Trip :': TripNameInput.Text,
                 Date_Start:DatePicker2.SelectedDate,
+                Date_End:DatePickerEND.SelectedDate,
                 Participant: Value(ParticipantNumInput.Text),
                 Destination : TripDestinationInput.Text
+                ///Duration: DateDiff(DatePicker2.SelectedDate, EndDatePicker.SelectedDate)
             });
             Set(CurrentTrip, TripNameInput.Text);
             Set(NumberOfParticipants, Value(ParticipantNumInput.Text));
@@ -358,6 +360,8 @@ Planatrip As screen:
             //Set(TripLength, Value(LengthofTripInput.Text)); 
             Set(StartDateVar, DatePicker2.SelectedDate);
             Set(EndDateVar, DatePickerEND.SelectedDate);
+            Set(TripLength, DateDiff(DatePicker2.SelectedDate,DatePickerEND.SelectedDate)); 
+            Set(StartDateVar, DatePicker2.SelectedDate); 
             
             
             Navigate(Homepage); 

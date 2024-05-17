@@ -401,8 +401,7 @@ Homepage As screen:
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             Size: =13
-            Text: |
-                =""
+            Text: =TotalBudget
             X: =165
             Y: =825
             ZIndex: =23

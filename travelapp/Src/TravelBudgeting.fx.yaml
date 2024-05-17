@@ -436,13 +436,15 @@ TravelBudgeting As screen:
             HoverBorderColor: =RGBA(0, 0, 0, 0)
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
-            OnSelect: |-
+            OnSelect: |
                 =Set(SelectedBudget, Value(TextInputBudgetRange.Text));
                 Set(TransportationBudget, SelectedBudget * TransportationPercent);
                 Set(AccommodationBudget, SelectedBudget * AccommodationPercent);
                 Set(FoodDrinkBudget, SelectedBudget * FoodDrinkPercent);
                 Set(EntertainmentBudget, SelectedBudget * EntertainmentPercent);
                 Set(TripTotal, SelectedBudget* NumberOfPeople);
+                Set(TotalBudget,TripTotal);
+                Navigate(Homepage)
             PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
             PressedColor: =RGBA(255, 255, 255, 1)
             PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)

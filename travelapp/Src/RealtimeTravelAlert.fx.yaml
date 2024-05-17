@@ -204,7 +204,7 @@ RealtimeTravelAlert As screen:
         PaddingRight: =0
         PaddingTop: =0
         Size: =15
-        Text: ="Flight XXXXX"
+        Text: ="Flight"
         Width: =141
         X: =42
         Y: =916
@@ -464,7 +464,7 @@ RealtimeTravelAlert As screen:
         Y: =345
         ZIndex: =20
 
-    msft_TextInput_4 As text:
+    FlightNumberInput As text:
         BorderColor: =RGBA(166, 166, 166, 1)
         BorderThickness: =2
         Color: =RGBA(166, 166, 166, 1)
@@ -481,6 +481,7 @@ RealtimeTravelAlert As screen:
         HoverColor: =RGBA(51, 51, 51, 1)
         HoverFill: =RGBA(255, 255, 255, 1)
         LineHeight: =1
+        OnChange: =Set(FlightNumber, FlightNumberInput.Text)
         PaddingBottom: =15
         PaddingLeft: =16
         PaddingRight: =16
@@ -518,4 +519,19 @@ RealtimeTravelAlert As screen:
         X: =40
         Y: =804
         ZIndex: =23
+
+    FlightNumberLabel As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Size: =13
+        Text: =FlightNumber
+        X: =103
+        Y: =903
+        ZIndex: =24
 
