@@ -483,7 +483,7 @@ RealtimeTravelAlert As screen:
         LineHeight: =1
         OnChange: |
             =Set(FlightNumber, FlightNumberInput.Text);
-            ///Set(FlightDetails, LookUp(TravelApp, Flight_Number = FlightNumber))
+            Set(FlightDetails, LookUp(TravelApp, Flight_Number = FlightNumber))
         PaddingBottom: =15
         PaddingLeft: =16
         PaddingRight: =16
@@ -550,7 +550,7 @@ RealtimeTravelAlert As screen:
         Font: =Font.'Segoe UI'
         Height: =28
         Size: =13
-        Text: =FlightDetails.From
+        Text: =FlightDetails.FlightFrom
         Width: =143
         X: =98
         Y: =939
@@ -603,7 +603,7 @@ RealtimeTravelAlert As screen:
         Font: =Font.'Segoe UI'
         Height: =50
         Size: =13
-        Text: =FlightDetails.To
+        Text: =FlightDetails.FlightTo
         Width: =155
         X: =349
         Y: =926
