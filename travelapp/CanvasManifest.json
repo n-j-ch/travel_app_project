@@ -99,7 +99,7 @@
       "zeroalltabindexes": true
     },
     "Author": "",
-    "BindingErrorCount": 5,
+    "BindingErrorCount": 8,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 500,
     "DocumentAppType": "DesktopOrTablet",
@@ -135,6 +135,8 @@
   "ScreenOrder": [
     "Homepage",
     "Planatrip",
+    "Login",
+    "Register",
     "TravelBudgeting",
     "LocalRecommendation",
     "DestinationGuide",

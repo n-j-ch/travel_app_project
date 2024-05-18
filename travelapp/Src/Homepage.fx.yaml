@@ -234,8 +234,8 @@ Homepage As screen:
             PaddingRight: =0
             PaddingTop: =15
             Size: =22.5
-            Text: ="Welcome, guest !"
-            Width: =250
+            Text: ="Welcome,"
+            Width: =146
             X: =39
             Y: =220
             ZIndex: =14
@@ -249,6 +249,7 @@ Homepage As screen:
             FocusedBorderThickness: =4
             Height: =38
             LineHeight: =1
+            OnSelect: =Navigate(Login)
             PaddingBottom: =15
             PaddingLeft: =0
             PaddingRight: =0
@@ -484,6 +485,26 @@ Homepage As screen:
             X: =362
             Y: =782
             ZIndex: =28
+
+        LabelUserName As label:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Height: =44
+            LineHeight: =1
+            PaddingBottom: =15
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =15
+            Size: =22.5
+            Text: =First(TravelApp).Username
+            Width: =224
+            X: =178
+            Y: =220
+            ZIndex: =29
 
     Alert As rectangle:
         BorderColor: =RGBA(0, 0, 0, 0)

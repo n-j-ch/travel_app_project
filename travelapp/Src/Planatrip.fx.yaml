@@ -349,11 +349,11 @@ Planatrip As screen:
         OnSelect: |-
             =Patch(TravelApp,
             LookUp(TravelApp, Title = "1"),{
-                'Trip :': TripNameInput.Text,
+                TripName: TripNameInput.Text,
                 Date_Start:DatePicker2.SelectedDate,
                 Date_End:DatePickerEND.SelectedDate,
                 Participant: Value(ParticipantNumInput.Text),
-                Destination : TripDestinationInput.Text
+                Destination: TripDestinationInput.Text
                 
             });
             Set(CurrentTrip, TripNameInput.Text);
