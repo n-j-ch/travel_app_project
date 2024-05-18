@@ -100,7 +100,7 @@ RealtimeTravelAlert As screen:
         Width: =162
         X: =39
         Y: =237
-        ZIndex: =3
+        ZIndex: =2
 
     msft_Label_33 As label:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -120,7 +120,7 @@ RealtimeTravelAlert As screen:
         Width: =306
         X: =35
         Y: =732
-        ZIndex: =4
+        ZIndex: =3
 
     msft_Label_34 As label:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -140,7 +140,7 @@ RealtimeTravelAlert As screen:
         Width: =214
         X: =39
         Y: =504
-        ZIndex: =5
+        ZIndex: =4
 
     "'Rectangle 9' As rectangle":
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -154,7 +154,7 @@ RealtimeTravelAlert As screen:
         Width: =126
         X: =43
         Y: =330
-        ZIndex: =6
+        ZIndex: =5
 
     "'Rectangle 2_1' As rectangle":
         BorderColor: =RGBA(0, 0, 0, 0.25)
@@ -168,7 +168,7 @@ RealtimeTravelAlert As screen:
         Width: =594
         X: =24
         Y: =903
-        ZIndex: =7
+        ZIndex: =6
 
     "'Flight XXXXX' As label":
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -188,7 +188,7 @@ RealtimeTravelAlert As screen:
         Width: =144
         X: =39
         Y: =908
-        ZIndex: =8
+        ZIndex: =7
 
     "'From: ________ To: Kingsford Smith Airport , Australia' As label":
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -209,7 +209,7 @@ RealtimeTravelAlert As screen:
         Width: =538
         X: =43
         Y: =947
-        ZIndex: =9
+        ZIndex: =8
 
     "'Departure time: 12:00 pm Arrival time: 16:00 pm' As label":
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -230,7 +230,7 @@ RealtimeTravelAlert As screen:
         Width: =486
         X: =42
         Y: =981
-        ZIndex: =10
+        ZIndex: =9
 
     "'Status: On time' As label":
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -251,7 +251,7 @@ RealtimeTravelAlert As screen:
         Width: =153
         X: =43
         Y: =1015
-        ZIndex: =11
+        ZIndex: =10
 
     "'Recent earthquake (last occurred 10/12/2023)_1' As label":
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -272,7 +272,7 @@ RealtimeTravelAlert As screen:
         Width: =578
         X: =39
         Y: =588
-        ZIndex: =12
+        ZIndex: =11
 
     "'Weather: Partly Cloudy' As label":
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -290,10 +290,10 @@ RealtimeTravelAlert As screen:
         Size: =18
         Text: |-
             ="Weather: "
-        Width: =266
+        Width: =107
         X: =208
         Y: =394
-        ZIndex: =13
+        ZIndex: =12
 
     "'Average Temperature: 24 °C' As label":
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -311,10 +311,10 @@ RealtimeTravelAlert As screen:
         Size: =18
         Text: |-
             ="Average Temperature:  "
-        Width: =330
+        Width: =255
         X: =208
         Y: =425
-        ZIndex: =14
+        ZIndex: =13
 
     "'Date: 1/1/2024' As label":
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -335,7 +335,7 @@ RealtimeTravelAlert As screen:
         Width: =169
         X: =208
         Y: =305
-        ZIndex: =15
+        ZIndex: =14
 
     "'Location: Sydney, Australia' As label":
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -356,7 +356,7 @@ RealtimeTravelAlert As screen:
         Width: =312
         X: =205
         Y: =348
-        ZIndex: =16
+        ZIndex: =15
 
     "'Recent storm (last occurred 27/12/2023)' As label":
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -377,7 +377,7 @@ RealtimeTravelAlert As screen:
         Width: =541
         X: =39
         Y: =628
-        ZIndex: =17
+        ZIndex: =16
 
     "'image 1' As image":
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -394,7 +394,7 @@ RealtimeTravelAlert As screen:
         Width: =118
         X: =47
         Y: =348
-        ZIndex: =18
+        ZIndex: =17
 
     Alert_5 As image:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -412,7 +412,7 @@ RealtimeTravelAlert As screen:
         Width: =87.70574188232422
         X: =538
         Y: =14
-        ZIndex: =19
+        ZIndex: =18
 
     FlightNumberInput As text:
         BorderColor: =RGBA(166, 166, 166, 1)
@@ -449,7 +449,7 @@ RealtimeTravelAlert As screen:
         Width: =183
         X: =263
         Y: =804
-        ZIndex: =21
+        ZIndex: =19
 
     msft_Label_35 As label:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -470,7 +470,7 @@ RealtimeTravelAlert As screen:
         Width: =213
         X: =40
         Y: =804
-        ZIndex: =23
+        ZIndex: =20
 
     FlightNumberLabel As label:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -487,24 +487,7 @@ RealtimeTravelAlert As screen:
         Width: =159
         X: =94
         Y: =903
-        ZIndex: =24
-
-    LabelFrom As label:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        BorderThickness: =2
-        Color: =RGBA(51, 51, 51, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        FocusedBorderThickness: =4
-        Font: =Font.'Segoe UI'
-        Height: =28
-        Size: =13
-        Text: =FlightDetails.FlightFrom
-        Width: =143
-        X: =98
-        Y: =939
-        ZIndex: =26
+        ZIndex: =21
 
     LabelDepartueTime As label:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -518,11 +501,15 @@ RealtimeTravelAlert As screen:
         Height: =48
         Size: =13
         Text: |-
-            =Text(FlightDetails.DepartureTime, "[$-en-US]hh:mm AM/PM")
+            =If(
+                First(TravelApp).FlightNumber = "12345", 
+                First(TravelApp).DepartureTime, 
+                ""
+            )
         Width: =134
         X: =196
         Y: =967
-        ZIndex: =27
+        ZIndex: =22
 
     LabelStatus As label:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -535,12 +522,16 @@ RealtimeTravelAlert As screen:
         Font: =Font.'Segoe UI'
         Height: =50
         Size: =13
-        Text: |
-            =FlightDetails.Status
+        Text: |-
+            =If(
+                First(TravelApp).FlightNumber = "12345", 
+                First(TravelApp).Status, 
+                ""
+            )
         Width: =155
         X: =110
-        Y: =1004
-        ZIndex: =28
+        Y: =999
+        ZIndex: =23
 
     LabelTo As label:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -553,11 +544,38 @@ RealtimeTravelAlert As screen:
         Font: =Font.'Segoe UI'
         Height: =50
         Size: =13
-        Text: =FlightDetails.FlightTo
+        Text: |-
+            =If(
+                First(TravelApp).FlightNumber = "12345", 
+                First(TravelApp).FlightTo, 
+                ""
+            )
         Width: =155
         X: =349
-        Y: =926
-        ZIndex: =29
+        Y: =931
+        ZIndex: =24
+
+    LabelFrom As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =28
+        Size: =13
+        Text: |-
+            =If(
+                First(TravelApp).FlightNumber = "12345", 
+                First(TravelApp).FlightFrom, 
+                ""
+            )
+        Width: =143
+        X: =98
+        Y: =944
+        ZIndex: =25
 
     LabelArrivalTime As label:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -571,11 +589,15 @@ RealtimeTravelAlert As screen:
         Height: =50
         Size: =13
         Text: |-
-            =Text(FlightDetails.ArrivalTime, "[$-en-US]hh:mm AM/PM")
-        Width: =155
+            =If(
+                First(TravelApp).FlightNumber = "12345", 
+                First(TravelApp).ArrivalTime, 
+                ""
+            )
+        Width: =136
         X: =429
         Y: =965
-        ZIndex: =30
+        ZIndex: =26
 
     Rating1 As rating:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -597,7 +619,7 @@ RealtimeTravelAlert As screen:
         Width: =200
         X: =228
         Y: =237
-        ZIndex: =31
+        ZIndex: =27
 
     LabelFeedbackText As label:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -615,7 +637,7 @@ RealtimeTravelAlert As screen:
         Width: =181
         X: =429
         Y: =227
-        ZIndex: =32
+        ZIndex: =28
 
     Label1 As label:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -631,7 +653,7 @@ RealtimeTravelAlert As screen:
         Width: =198
         X: =330
         Y: =340
-        ZIndex: =33
+        ZIndex: =29
 
     Label1_1 As label:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -647,7 +669,7 @@ RealtimeTravelAlert As screen:
         Width: =246
         X: =282
         Y: =297
-        ZIndex: =34
+        ZIndex: =30
 
     Button4 As button:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -678,5 +700,37 @@ RealtimeTravelAlert As screen:
         Width: =122
         X: =463
         Y: =817
-        ZIndex: =35
+        ZIndex: =31
+
+    Label1_2 As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Size: =13
+        Text: =First(TravelApp).Weather
+        Width: =109
+        X: =331
+        Y: =386
+        ZIndex: =32
+
+    Label1_3 As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Size: =13
+        Text: =First(TravelApp).Temperature
+        Width: =102
+        X: =463
+        Y: =426
+        ZIndex: =33
 
