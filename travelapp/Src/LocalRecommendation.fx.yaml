@@ -83,6 +83,62 @@ LocalRecommendation As screen:
             Y: =417
             ZIndex: =5
 
+        Button3_1 As button:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            Color: =RGBA(0, 120, 212, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(204, 228, 246, 1)
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
+            OnSelect: |
+                =Launch("https://www.google.com/maps/place/Margaret/@-33.876884,151.2366126,17z/data=!3m2!4b1!5s0x6b12addd777290f7:0xc1e9a305bc66b0b8!4m6!3m5!1s0x6b12ad77ed68c769:0x66a6ab1ce523d42f!8m2!3d-33.8768885!4d151.2414835!16s%2Fg%2F11nntc20mp?entry=ttu")
+            PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =15
+            Text: ="Visit the page"
+            X: =332
+            Y: =300
+            ZIndex: =6
+
+        Button3_2 As button:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            Color: =RGBA(0, 120, 212, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(204, 228, 246, 1)
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
+            OnSelect: |
+                =Launch("https://www.google.com/maps/place/Henrietta+Chicken+Surry+Hills/@-33.8870125,151.2111864,17z/data=!3m2!4b1!5s0x6b12ae1efaa59325:0x34fdcbf76cd8ef04!4m6!3m5!1s0x6b12af476e813d21:0xa92e3a97c1242bc7!8m2!3d-33.887017!4d151.2137613!16s%2Fg%2F11jcx_tb2_?entry=ttu")
+            PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =15
+            Text: ="Visit the page"
+            X: =390
+            Y: =407
+            ZIndex: =7
+
     msft_Label_15 As label:
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
@@ -115,7 +171,7 @@ LocalRecommendation As screen:
         Image: =image276662
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedFill: =RGBA(0, 0, 0, 0)
-        Width: =525
+        Width: =304
         X: =39
         Y: =234
         ZIndex: =9
@@ -397,46 +453,6 @@ LocalRecommendation As screen:
         X: =42
         Y: =711
         ZIndex: =24
-
-    "'Visit the page_2' As label":
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        Color: =RGBA(3.640315, 148.454, 229.91168, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        FocusedBorderThickness: =4
-        Height: =25
-        LineHeight: =1
-        PaddingBottom: =0
-        PaddingLeft: =0
-        PaddingRight: =0
-        PaddingTop: =0
-        Size: =15
-        Text: ="Visit the page"
-        Width: =126
-        X: =230
-        Y: =388
-        ZIndex: =25
-
-    "'Visit the page_3' As label":
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        Color: =RGBA(3.640315, 148.454, 229.91168, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        FocusedBorderThickness: =4
-        Height: =20
-        LineHeight: =1
-        PaddingBottom: =0
-        PaddingLeft: =0
-        PaddingRight: =0
-        PaddingTop: =0
-        Size: =15
-        Text: ="Visit the page"
-        Width: =129
-        X: =227
-        Y: =286
-        ZIndex: =26
 
     "'Frequency: Every 30-45 mins' As label":
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -740,7 +756,91 @@ LocalRecommendation As screen:
         RadiusTopRight: =0
         Size: =15
         Text: ="Visit the page"
-        X: =38
+        X: =29
         Y: =706
         ZIndex: =42
+
+    Button3_3 As button:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        Color: =RGBA(0, 120, 212, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(204, 228, 246, 1)
+        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
+        OnSelect: |
+            =Launch("https://www.google.com/maps/place/Sydney+Opera+House/@-33.8567799,151.2127218,17z/data=!3m1!4b1!4m6!3m5!1s0x6b12ae665e892fdd:0x3133f8d75a1ac251!8m2!3d-33.8567844!4d151.2152967!16zL20vMDZfbm0?entry=ttu")
+        PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =15
+        Text: ="Visit the page"
+        X: =276
+        Y: =890
+        ZIndex: =43
+
+    Button3_5 As button:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        Color: =RGBA(0, 120, 212, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(204, 228, 246, 1)
+        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
+        OnSelect: |
+            =Launch("https://www.bigbustours.com/en/sydney/sydney-bus-tours")
+        PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =15
+        Text: ="Visit the page"
+        X: =276
+        Y: =888
+        ZIndex: =45
+
+    Button3_6 As button:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        Color: =RGBA(0, 120, 212, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(204, 228, 246, 1)
+        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
+        OnSelect: |
+            =Launch("https://www.ozjetboating.com.au/")
+        PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =15
+        Text: ="Visit the page"
+        X: =277
+        Y: =984
+        ZIndex: =46
 
