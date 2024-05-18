@@ -18,7 +18,7 @@ RealtimeTravelAlert As screen:
             Fill: =RGBA(255, 255, 255, 0.52)
             FocusedBorderThickness: =4
             Height: =1098
-            HoverFill: =RGBA(0, 120, 212, 1)
+            HoverFill: =
             PressedFill: =RGBA(0, 120, 212, 1)
             Width: =607
             X: =16
@@ -44,24 +44,6 @@ RealtimeTravelAlert As screen:
             X: =39
             Y: =46
             ZIndex: =3
-
-        "'Line 1_6' As image":
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledFill: =RGBA(0, 0, 0, 0)
-            FocusedBorderThickness: =4
-            Height: =0
-            HoverBorderColor: =RGBA(0, 0, 0, 0)
-            HoverFill: =RGBA(0, 0, 0, 0)
-            Image: =image274136
-            PressedBorderColor: =RGBA(0, 0, 0, 0)
-            PressedFill: =RGBA(0, 0, 0, 0)
-            Width: =525
-            X: =39
-            Y: =146
-            ZIndex: =4
 
         EmergencyToggle As toggleSwitch:
             BorderColor: =RGBA(0, 0, 0, 0)

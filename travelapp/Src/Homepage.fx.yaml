@@ -17,7 +17,7 @@ Homepage As screen:
             Fill: =RGBA(255, 255, 255, 0.52)
             FocusedBorderThickness: =4
             Height: =1085
-            HoverFill: =RGBA(0, 120, 212, 1)
+            HoverFill: =
             PressedFill: =RGBA(0, 120, 212, 1)
             Width: =607
             X: =19
@@ -31,7 +31,7 @@ Homepage As screen:
             Fill: =RGBA(255, 255, 255, 0.52)
             FocusedBorderThickness: =4
             Height: =257
-            HoverFill: =RGBA(0, 120, 212, 1)
+            HoverFill: =
             PressedFill: =RGBA(0, 120, 212, 1)
             Width: =608
             X: =18

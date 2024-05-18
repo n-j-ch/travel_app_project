@@ -17,11 +17,11 @@ Planatrip As screen:
             Fill: =RGBA(255, 255, 255, 0.52)
             FocusedBorderThickness: =4
             Height: =1095
-            HoverFill: =RGBA(0, 120, 212, 1)
+            HoverFill: =
             PressedFill: =RGBA(0, 120, 212, 1)
             Width: =607
-            X: =17
-            Y: =19
+            X: =18
+            Y: =18
             ZIndex: =2
 
         msft_Label_4 As label:

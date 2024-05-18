@@ -5190,14 +5190,7 @@
         "X",
         "Y",
         "ZIndex",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "\"Currency: Australian Dollar (AUD)\"",
-          "InvariantPropertyName": "Text",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Text",
         "Visible",
         "Overflow",
         "FocusedBorderThickness",
@@ -6170,7 +6163,14 @@
         "ZIndex",
         "Visible",
         "FocusedBorderThickness",
-        "HoverFill",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "RGBA(0, 120, 212, 1)",
+          "InvariantPropertyName": "HoverFill",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "PressedFill",
         "AccessibleLabel",
         "Tooltip",

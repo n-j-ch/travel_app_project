@@ -10115,7 +10115,14 @@
         "ZIndex",
         "Visible",
         "FocusedBorderThickness",
-        "HoverFill",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "RGBA(0, 120, 212, 1)",
+          "InvariantPropertyName": "HoverFill",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "PressedFill",
         "AccessibleLabel",
         "Tooltip",
