@@ -154,8 +154,8 @@ Homepage As screen:
             PaddingTop: =0
             Text: =" from                         to "
             Width: =284
-            X: =338
-            Y: =780
+            X: =315
+            Y: =781
             ZIndex: =9
 
         Days As label:
@@ -386,7 +386,7 @@ Homepage As screen:
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             Size: =15
-            Text: =CurrentTrip
+            Text: =First(TravelApp).TripName
             X: =159
             Y: =785
             ZIndex: =22
@@ -401,7 +401,7 @@ Homepage As screen:
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             Size: =13
-            Text: =TotalBudget
+            Text: =TotalBudget 
             X: =165
             Y: =825
             ZIndex: =23
@@ -432,6 +432,7 @@ Homepage As screen:
             Font: =Font.'Segoe UI'
             Size: =15
             Text: =DestinationVar 
+            Width: =209
             X: =165
             Y: =914
             ZIndex: =25
@@ -461,9 +462,9 @@ Homepage As screen:
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             Size: =15
-            Text: =TripLength
+            Text: =DateDiff(First(TravelApp).Date_Start, First(TravelApp).Date_End, "Days")
             Width: =67
-            X: =405
+            X: =414
             Y: =797
             ZIndex: =27
 
@@ -477,11 +478,11 @@ Homepage As screen:
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             Height: =20
-            Size: =13
-            Text: =StartDateVar
-            Width: =118
-            X: =396
-            Y: =781
+            Size: =10
+            Text: =First(TravelApp).Date_Start
+            Width: =170
+            X: =362
+            Y: =782
             ZIndex: =28
 
     Alert As rectangle:
@@ -677,10 +678,10 @@ Homepage As screen:
         FocusedBorderThickness: =4
         Font: =Font.'Segoe UI'
         Height: =45
-        Size: =13
-        Text: =EndDateVar
-        Width: =109
-        X: =525
-        Y: =768
+        Size: =9
+        Text: =First(TravelApp).Date_End
+        Width: =115
+        X: =504
+        Y: =771
         ZIndex: =15
 

@@ -139,6 +139,24 @@ LocalRecommendation As screen:
             Y: =407
             ZIndex: =7
 
+        Alert_7 As image:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
+            Height: =65.24633026123047
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Image: =image2731217
+            OnSelect: =Navigate(Homepage)
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            Width: =87.70574188232422
+            X: =536
+            Y: =16
+            ZIndex: =8
+
     msft_Label_15 As label:
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
@@ -713,24 +731,6 @@ LocalRecommendation As screen:
         X: =64
         Y: =311
         ZIndex: =40
-
-    Alert_3 As image:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledFill: =RGBA(0, 0, 0, 0)
-        FocusedBorderThickness: =4
-        Height: =65.24633026123047
-        HoverBorderColor: =RGBA(0, 0, 0, 0)
-        HoverFill: =RGBA(0, 0, 0, 0)
-        Image: =image2731217
-        OnSelect: =Navigate(Homepage)
-        PressedBorderColor: =RGBA(0, 0, 0, 0)
-        PressedFill: =RGBA(0, 0, 0, 0)
-        Width: =87.70574188232422
-        X: =444
-        Y: =17
-        ZIndex: =41
 
     Button3 As button:
         BorderColor: =RGBA(0, 0, 0, 0)

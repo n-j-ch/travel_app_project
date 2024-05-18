@@ -87,6 +87,7 @@ Planatrip As screen:
             BorderColor: =RGBA(166, 166, 166, 1)
             CalendarHeaderFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
             Color: =RGBA(51, 51, 51, 1)
+            DefaultDate: =
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
             DisabledColor: =RGBA(166, 166, 166, 1)
             DisabledFill: =RGBA(244, 244, 244, 1)
@@ -158,8 +159,8 @@ Planatrip As screen:
             RadiusTopRight: =15
             Reset: =true
             Size: =22.5
-            Width: =338
-            X: =163
+            Width: =321
+            X: =180
             Y: =3
             ZIndex: =7
 
@@ -219,15 +220,15 @@ Planatrip As screen:
             RadiusTopRight: =15
             Reset: =true 
             Size: =22.5
-            Width: =338
-            X: =163
-            Y: =3
+            Width: =321
+            X: =180
+            Y: =2
             ZIndex: =10
 
     Participant_1 As groupContainer.manualLayoutContainer:
         Height: =59
         LayoutMode: ="manual"
-        Width: =256
+        Width: =278
         X: =39
         Y: =382
         ZIndex: =14
@@ -281,7 +282,7 @@ Planatrip As screen:
             Reset: =true
             Size: =22.5
             Width: =93
-            X: =163
+            X: =179
             Y: =2
             ZIndex: =17
 
@@ -317,6 +318,7 @@ Planatrip As screen:
             BorderColor: =RGBA(166, 166, 166, 1)
             CalendarHeaderFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
             Color: =RGBA(51, 51, 51, 1)
+            DefaultDate: =
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
             DisabledColor: =RGBA(166, 166, 166, 1)
             DisabledFill: =RGBA(244, 244, 244, 1)
@@ -346,7 +348,7 @@ Planatrip As screen:
         HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
         OnSelect: |-
             =Patch(TravelApp,
-            Defaults(TravelApp),{
+            LookUp(TravelApp, Title = "1"),{
                 'Trip :': TripNameInput.Text,
                 Date_Start:DatePicker2.SelectedDate,
                 Date_End:DatePickerEND.SelectedDate,
@@ -397,7 +399,7 @@ Planatrip As screen:
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedFill: =RGBA(0, 0, 0, 0)
         Width: =87.70574188232422
-        X: =453
+        X: =540
         Y: =17
         ZIndex: =26
 

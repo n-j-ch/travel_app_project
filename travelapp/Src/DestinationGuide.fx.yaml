@@ -139,6 +139,24 @@ DestinationGuide As screen:
             Y: =370
             ZIndex: =7
 
+        Alert_6 As image:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
+            Height: =65.24633026123047
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Image: =image2731217
+            OnSelect: =Navigate(Homepage)
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            Width: =87.70574188232422
+            X: =540
+            Y: =12
+            ZIndex: =8
+
     "'TfNSW_B 1' As image":
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
@@ -390,24 +408,6 @@ DestinationGuide As screen:
         X: =64
         Y: =1015
         ZIndex: =25
-
-    Alert_4 As image:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledFill: =RGBA(0, 0, 0, 0)
-        FocusedBorderThickness: =4
-        Height: =65.24633026123047
-        HoverBorderColor: =RGBA(0, 0, 0, 0)
-        HoverFill: =RGBA(0, 0, 0, 0)
-        Image: =image2731217
-        OnSelect: =Navigate(Homepage)
-        PressedBorderColor: =RGBA(0, 0, 0, 0)
-        PressedFill: =RGBA(0, 0, 0, 0)
-        Width: =87.70574188232422
-        X: =441
-        Y: =12
-        ZIndex: =26
 
     Button1 As button:
         BorderColor: =RGBA(0, 0, 0, 0)

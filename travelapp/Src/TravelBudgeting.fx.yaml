@@ -275,8 +275,12 @@ TravelBudgeting As screen:
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Fill: =RGBA(255, 255, 255, 1)
                 FocusedBorderThickness: =4
-                Font: =Font.'Segoe UI'
                 Height: =50
+                LineHeight: =1
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
                 Size: =20
                 Text: =Text(FoodDrinkBudget, "$0")
                 Width: =220
@@ -400,7 +404,7 @@ TravelBudgeting As screen:
                 PaddingRight: =0
                 PaddingTop: =0
                 Size: =22.5
-                Text: =Text(TripTotal, "0$")
+                Text: =Text(TripTotal, "$0")
                 Width: =254
                 X: =271
                 ZIndex: =29
@@ -442,9 +446,13 @@ TravelBudgeting As screen:
                 Set(AccommodationBudget, SelectedBudget * AccommodationPercent);
                 Set(FoodDrinkBudget, SelectedBudget * FoodDrinkPercent);
                 Set(EntertainmentBudget, SelectedBudget * EntertainmentPercent);
-                Set(TripTotal, SelectedBudget* NumberOfPeople);
-                Set(TotalBudget,TripTotal);
-                Navigate(Homepage)
+                Set(TripTotal, SelectedBudget* NumberOfParticipants);
+                Set(TotalBudget,"$"&TripTotal);
+                
+                Patch(TravelApp,
+                LookUp(TravelApp, Title = "1"),{
+                    Budget: Value(TextInputBudgetRange.Text)
+                })
             PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
             PressedColor: =RGBA(255, 255, 255, 1)
             PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
@@ -456,6 +464,7 @@ TravelBudgeting As screen:
             Text: |-
                 ="Calculate estimated budget per person:"
             Width: =494
+            X: =27
             ZIndex: =29
 
     Alert_2 As image:
@@ -472,7 +481,7 @@ TravelBudgeting As screen:
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedFill: =RGBA(0, 0, 0, 0)
         Width: =87.70574188232422
-        X: =462
-        Y: =18
+        X: =536
+        Y: =20
         ZIndex: =9
 

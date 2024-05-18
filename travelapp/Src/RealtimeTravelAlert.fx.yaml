@@ -63,25 +63,6 @@ RealtimeTravelAlert As screen:
             Y: =146
             ZIndex: =4
 
-        DatePicker3 As datepicker:
-            BorderColor: =RGBA(166, 166, 166, 1)
-            CalendarHeaderFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
-            Color: =RGBA(51, 51, 51, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            DisabledFill: =RGBA(244, 244, 244, 1)
-            Font: =Font.'Segoe UI'
-            Height: =34
-            HoverDateFill: =RGBA(200, 200, 200, 1)
-            IconBackground: =RGBA(0, 120, 212, 1)
-            PaddingTop: =5
-            SelectedDateFill: =RGBA(0, 120, 212, 1)
-            Size: =13
-            Width: =173
-            X: =281
-            Y: =299
-            ZIndex: =5
-
         EmergencyToggle As toggleSwitch:
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
@@ -429,41 +410,9 @@ RealtimeTravelAlert As screen:
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedFill: =RGBA(0, 0, 0, 0)
         Width: =87.70574188232422
-        X: =517
-        Y: =20
+        X: =538
+        Y: =14
         ZIndex: =19
-
-    TripNameInput_1 As text:
-        BorderColor: =RGBA(166, 166, 166, 1)
-        BorderThickness: =2
-        Color: =RGBA(166, 166, 166, 1)
-        Default: =
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        FocusedBorderThickness: =4
-        Height: =33
-        HintText: ="Enter location"
-        HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
-        HoverColor: =RGBA(51, 51, 51, 1)
-        HoverFill: =RGBA(255, 255, 255, 1)
-        LineHeight: =1
-        PaddingBottom: =15
-        PaddingLeft: =16
-        PaddingRight: =16
-        PaddingTop: =15
-        PressedBorderColor: =RGBA(0, 120, 212, 1)
-        PressedColor: =RGBA(51, 51, 51, 1)
-        PressedFill: =RGBA(255, 255, 255, 1)
-        RadiusBottomLeft: =15
-        RadiusBottomRight: =15
-        RadiusTopLeft: =15
-        RadiusTopRight: =15
-        Size: =22.5
-        Width: =225
-        X: =317
-        Y: =345
-        ZIndex: =20
 
     FlightNumberInput As text:
         BorderColor: =RGBA(166, 166, 166, 1)
@@ -497,7 +446,7 @@ RealtimeTravelAlert As screen:
         RadiusTopLeft: =15
         RadiusTopRight: =15
         Size: =22.5
-        Width: =333
+        Width: =183
         X: =263
         Y: =804
         ZIndex: =21
@@ -534,7 +483,7 @@ RealtimeTravelAlert As screen:
         Font: =Font.'Segoe UI'
         Height: =44
         Size: =13
-        Text: =FlightNumber
+        Text: =First(TravelApp).Flight_Number
         Width: =159
         X: =94
         Y: =903
@@ -667,4 +616,67 @@ RealtimeTravelAlert As screen:
         X: =429
         Y: =227
         ZIndex: =32
+
+    Label1 As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Size: =13
+        Text: =First(TravelApp).Destination
+        Width: =198
+        X: =330
+        Y: =340
+        ZIndex: =33
+
+    Label1_1 As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Size: =13
+        Text: =Text(First(TravelApp).Date_Start, "dd mmm yyyy")
+        Width: =239
+        X: =278
+        Y: =297
+        ZIndex: =34
+
+    Button4 As button:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(0, 120, 212, 1)
+        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
+        OnSelect: |-
+            =Patch(TravelApp,
+            LookUp(TravelApp, Title = "1"),{
+                Flight_Number: FlightNumberInput.Text
+            });
+        PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =15
+        Text: ="Track"
+        Width: =122
+        X: =463
+        Y: =817
+        ZIndex: =35
 
