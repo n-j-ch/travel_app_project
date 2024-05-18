@@ -570,7 +570,7 @@ RealtimeTravelAlert As screen:
         Font: =Font.'Segoe UI'
         Height: =50
         Size: =13
-        Text: |-
+        Text: |
             =If(
                 First(TravelApp).FlightNumber = "12345", 
                 First(TravelApp).ArrivalTime, 
