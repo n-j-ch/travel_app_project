@@ -123,8 +123,7 @@ Register As screen:
             =Patch(TravelApp,
             LookUp(TravelApp, Title = "1"),{
                 Username: UserNameInput_2.Text,
-                Password: PasswordInput_2.Text,
-                Title: "1"
+                Password: PasswordInput_2.Text
             });
             
             Navigate(Login)
