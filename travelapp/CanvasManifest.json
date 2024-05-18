@@ -133,11 +133,11 @@
     "UserLocale": "en-US"
   },
   "ScreenOrder": [
-    "Homepage",
-    "Planatrip",
     "Login",
     "Login_Failed",
     "Register",
+    "Homepage",
+    "Planatrip",
     "TravelBudgeting",
     "LocalRecommendation",
     "DestinationGuide",

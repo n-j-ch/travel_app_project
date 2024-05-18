@@ -417,7 +417,7 @@ Homepage As screen:
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             Size: =15
-            Text: =NumberOfParticipants
+            Text: =First(TravelApp).Participant
             X: =252
             Y: =868
             ZIndex: =24
@@ -432,7 +432,7 @@ Homepage As screen:
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             Size: =15
-            Text: =DestinationVar 
+            Text: =First(TravelApp).Destination
             Width: =209
             X: =165
             Y: =914
@@ -448,7 +448,8 @@ Homepage As screen:
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             Size: =13
-            Text: =""
+            Text: ="Sydney Opera House"
+            Width: =170
             X: =139
             Y: =954
             ZIndex: =26
