@@ -9,35 +9,35 @@
         Step1 As TestStep:
             Description: ="Select 'SaveButton_3'"
             Screen: =Login
-            Value: =Select('SaveButton_3')
+            Value: =Select(SaveButton_3)
 
         Step2 As TestStep:
             Description: ="Set 'UserNameInput_2'.Text to ""Test"""
             Screen: =Register
-            Value: =SetProperty('UserNameInput_2'.Text, "Test")
+            Value: =SetProperty(UserNameInput_2.Text, "Test")
 
         Step3 As TestStep:
             Description: ="Set 'PasswordInput_2'.Text to ""123"""
             Screen: =Register
-            Value: =SetProperty('PasswordInput_2'.Text, "123")
+            Value: =SetProperty(PasswordInput_2.Text, "123")
 
         Step4 As TestStep:
             Description: ="Select 'SaveButton_4'"
             Screen: =Register
-            Value: =Select('SaveButton_4')
+            Value: =Select(SaveButton_4)
 
         Step5 As TestStep:
             Description: ="Set 'UserNameInput'.Text to ""Test"""
             Screen: =Login
-            Value: =SetProperty('UserNameInput'.Text, "Test")
+            Value: =SetProperty(UserNameInput.Text, "Test")
 
         Step6 As TestStep:
             Description: ="Set 'PasswordInput'.Text to ""123"""
             Screen: =Login
-            Value: =SetProperty('PasswordInput'.Text, "123")
+            Value: =SetProperty(PasswordInput.Text, "123")
 
         Step7 As TestStep:
             Description: ="Select 'SaveButton_1'"
             Screen: =Login
-            Value: =Select('SaveButton_1')
+            Value: =Select(SaveButton_1)
 

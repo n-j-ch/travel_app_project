@@ -484,7 +484,7 @@ RealtimeTravelAlert As screen:
         Size: =13
         Text: |-
             =If(
-                First(TravelApp).FlightNumber = "12345", 
+                First(TravelApp).Flight_Number = "12345", 
                 First(TravelApp).DepartureTime, 
                 ""
             )
@@ -506,7 +506,7 @@ RealtimeTravelAlert As screen:
         Size: =13
         Text: |-
             =If(
-                First(TravelApp).FlightNumber = "12345", 
+                First(TravelApp).Flight_Number = "12345", 
                 First(TravelApp).Status, 
                 ""
             )
@@ -528,7 +528,7 @@ RealtimeTravelAlert As screen:
         Size: =13
         Text: |-
             =If(
-                First(TravelApp).FlightNumber = "12345", 
+                First(TravelApp).Flight_Number = "12345", 
                 First(TravelApp).FlightTo, 
                 ""
             )
@@ -550,7 +550,7 @@ RealtimeTravelAlert As screen:
         Size: =13
         Text: |-
             =If(
-                First(TravelApp).FlightNumber = "12345", 
+                First(TravelApp).Flight_Number = "12345", 
                 First(TravelApp).FlightFrom, 
                 ""
             )
@@ -572,7 +572,7 @@ RealtimeTravelAlert As screen:
         Size: =13
         Text: |
             =If(
-                First(TravelApp).FlightNumber = "12345", 
+                First(TravelApp).Flight_Number = "12345", 
                 First(TravelApp).ArrivalTime, 
                 ""
             )
