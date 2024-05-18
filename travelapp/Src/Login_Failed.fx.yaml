@@ -1,16 +1,16 @@
-Login As screen:
+Login_Failed As screen:
     Height: =1136
     LoadingSpinnerColor: =RGBA(0, 120, 212, 1)
     Width: =640
 
-    Backgroud_6 As groupContainer.manualLayoutContainer:
+    Backgroud_8 As groupContainer.manualLayoutContainer:
         Fill: =RGBA(153, 201, 238, 1)
         Height: =1136
         LayoutMode: ="manual"
         Width: =640
         ZIndex: =1
 
-        "'Rectangle 1_6' As rectangle":
+        "'Rectangle 1_8' As rectangle":
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
             DisabledFill: =RGBA(166, 166, 166, 1)
@@ -24,7 +24,7 @@ Login As screen:
             Y: =12
             ZIndex: =2
 
-        msft_Label_7 As label:
+        msft_Label_30 As label:
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
             Color: =RGBA(51, 51, 51, 1)
@@ -44,48 +44,128 @@ Login As screen:
             Y: =46
             ZIndex: =3
 
-        SaveButton_3 As button:
+        msft_Label_42 As label:
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
-            BorderThickness: =0
+            Color: =RGBA(255, 0, 0, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Height: =100
+            LineHeight: =2.218
+            PaddingBottom: =15
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =15
+            Size: =15
+            Text: ="Incorrect Username or Password"
+            Width: =322
+            X: =172
+            Y: =352
+            ZIndex: =4
+
+    SaveButton_2 As button:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =0
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(0, 120, 212, 1)
+        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+        Height: =58
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
+        OnSelect: =If ( !IsBlank(LookUp('TravelApp', Username = UserNameInput_1.Text && Password = PasswordInput_1.Text)),Navigate(Homepage),Navigate(Login_Failed))
+        PaddingBottom: =12
+        PaddingLeft: =56
+        PaddingRight: =56
+        PaddingTop: =11
+        PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+        RadiusBottomLeft: =15
+        RadiusBottomRight: =15
+        RadiusTopLeft: =15
+        RadiusTopRight: =15
+        Size: =26.25
+        Text: ="Login"
+        VerticalAlign: =VerticalAlign.Top
+        Width: =202
+        X: =219
+        Y: =436
+        ZIndex: =25
+
+    UserName_5 As groupContainer.manualLayoutContainer:
+        Height: =58
+        LayoutMode: ="manual"
+        Width: =501
+        X: =39
+        Y: =305
+        ZIndex: =26
+
+        msft_Label_41 As label:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Height: =30
+            LineHeight: =1
+            PaddingBottom: =15
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =15
+            Size: =22.5
+            Text: ="Password"
+            Width: =155
+            Y: =15
+            ZIndex: =6
+
+        PasswordInput_1 As text:
+            BorderColor: =RGBA(166, 166, 166, 1)
+            BorderThickness: =2
+            Color: =RGBA(166, 166, 166, 1)
+            Default: =
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
             DisabledColor: =RGBA(166, 166, 166, 1)
             DisabledFill: =RGBA(244, 244, 244, 1)
-            Fill: =RGBA(0, 120, 212, 1)
-            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
-            Height: =58
-            HoverBorderColor: =RGBA(0, 0, 0, 0)
-            HoverColor: =RGBA(255, 255, 255, 1)
-            HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
-            OnSelect: =Navigate(Register)
-            PaddingBottom: =12
-            PaddingLeft: =56
-            PaddingRight: =56
-            PaddingTop: =11
-            PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
-            PressedColor: =RGBA(255, 255, 255, 1)
-            PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+            FocusedBorderThickness: =4
+            Height: =55
+            HintText: ="Enter Password"
+            HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+            HoverColor: =RGBA(51, 51, 51, 1)
+            HoverFill: =RGBA(255, 255, 255, 1)
+            LineHeight: =1
+            PaddingBottom: =15
+            PaddingLeft: =16
+            PaddingRight: =16
+            PaddingTop: =15
+            PressedBorderColor: =RGBA(0, 120, 212, 1)
+            PressedColor: =RGBA(51, 51, 51, 1)
+            PressedFill: =RGBA(255, 255, 255, 1)
             RadiusBottomLeft: =15
             RadiusBottomRight: =15
             RadiusTopLeft: =15
             RadiusTopRight: =15
-            Size: =26.25
-            Text: ="Register"
-            VerticalAlign: =VerticalAlign.Top
-            Width: =263
-            X: =188
-            Y: =515
-            ZIndex: =4
+            Reset: =true
+            Size: =22.5
+            Width: =321
+            X: =177
+            Y: =2
+            ZIndex: =7
 
-    UserName As groupContainer.manualLayoutContainer:
+    UserName_4 As groupContainer.manualLayoutContainer:
         Height: =58
         LayoutMode: ="manual"
         Width: =501
         X: =39
         Y: =220
-        ZIndex: =5
+        ZIndex: =27
 
-        msft_Label_9 As label:
+        msft_Label_31 As label:
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
             Color: =RGBA(51, 51, 51, 1)
@@ -104,7 +184,7 @@ Login As screen:
             Y: =15
             ZIndex: =6
 
-        UserNameInput As text:
+        UserNameInput_1 As text:
             BorderColor: =RGBA(166, 166, 166, 1)
             BorderThickness: =2
             Color: =RGBA(166, 166, 166, 1)
@@ -139,7 +219,7 @@ Login As screen:
             Y: =3
             ZIndex: =7
 
-    SaveButton_1 As button:
+    SaveButton_5 As button:
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
         BorderThickness: =0
@@ -152,7 +232,7 @@ Login As screen:
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
-        OnSelect: =If ( !IsBlank(LookUp('TravelApp', Username = UserNameInput.Text && Password = PasswordInput.Text)),Navigate(Homepage),Navigate(Login_Failed))
+        OnSelect: =Navigate(Register)
         PaddingBottom: =12
         PaddingLeft: =56
         PaddingRight: =56
@@ -165,70 +245,10 @@ Login As screen:
         RadiusTopLeft: =15
         RadiusTopRight: =15
         Size: =26.25
-        Text: ="Login"
+        Text: ="Register"
         VerticalAlign: =VerticalAlign.Top
-        Width: =202
-        X: =219
-        Y: =436
-        ZIndex: =25
-
-    UserName_1 As groupContainer.manualLayoutContainer:
-        Height: =58
-        LayoutMode: ="manual"
-        Width: =501
-        X: =39
-        Y: =305
-        ZIndex: =26
-
-        msft_Label_23 As label:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            Color: =RGBA(51, 51, 51, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FocusedBorderThickness: =4
-            Height: =30
-            LineHeight: =1
-            PaddingBottom: =15
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =15
-            Size: =22.5
-            Text: ="Password"
-            Width: =155
-            Y: =15
-            ZIndex: =6
-
-        PasswordInput As text:
-            BorderColor: =RGBA(166, 166, 166, 1)
-            BorderThickness: =2
-            Color: =RGBA(166, 166, 166, 1)
-            Default: =
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            DisabledFill: =RGBA(244, 244, 244, 1)
-            FocusedBorderThickness: =4
-            Height: =55
-            HintText: ="Enter Password"
-            HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
-            HoverColor: =RGBA(51, 51, 51, 1)
-            HoverFill: =RGBA(255, 255, 255, 1)
-            LineHeight: =1
-            PaddingBottom: =15
-            PaddingLeft: =16
-            PaddingRight: =16
-            PaddingTop: =15
-            PressedBorderColor: =RGBA(0, 120, 212, 1)
-            PressedColor: =RGBA(51, 51, 51, 1)
-            PressedFill: =RGBA(255, 255, 255, 1)
-            RadiusBottomLeft: =15
-            RadiusBottomRight: =15
-            RadiusTopLeft: =15
-            RadiusTopRight: =15
-            Reset: =true
-            Size: =22.5
-            Width: =321
-            X: =177
-            Y: =2
-            ZIndex: =7
+        Width: =263
+        X: =188
+        Y: =515
+        ZIndex: =28
 
