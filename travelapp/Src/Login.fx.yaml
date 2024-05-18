@@ -19,10 +19,10 @@ Login As screen:
             Height: =1095
             HoverFill: =RGBA(0, 120, 212, 1)
             PressedFill: =RGBA(0, 120, 212, 1)
-            Width: =623
-            X: =8
-            Y: =12
-            ZIndex: =2
+            Width: =607
+            X: =17
+            Y: =19
+            ZIndex: =1
 
         msft_Label_7 As label:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -42,7 +42,7 @@ Login As screen:
             Width: =228
             X: =39
             Y: =46
-            ZIndex: =3
+            ZIndex: =2
 
         SaveButton_3 As button:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -75,7 +75,7 @@ Login As screen:
             Width: =263
             X: =188
             Y: =515
-            ZIndex: =4
+            ZIndex: =3
 
     UserName As groupContainer.manualLayoutContainer:
         Height: =58
@@ -152,7 +152,7 @@ Login As screen:
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
-        OnSelect: =If ( !IsBlank(LookUp('TravelApp', Username = UserNameInput.Text && Password = PasswordInput.Text)),Navigate(Homepage),Navigate(Login_Failed))
+        OnSelect: =If ( !IsBlank(LookUp(TravelApp, Username = UserNameInput.Text && Password = PasswordInput.Text)),Navigate(Homepage),Navigate(Login_Failed))
         PaddingBottom: =12
         PaddingLeft: =56
         PaddingRight: =56
