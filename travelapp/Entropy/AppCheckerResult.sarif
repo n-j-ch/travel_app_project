@@ -5864,6 +5864,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "App.NumberOfPeople"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.NumberOfPeople",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "NumberOfPeople",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.FlightNumber"
                 }
               ],
@@ -5905,36 +5935,6 @@
               },
               "properties": {
                 "member": "FlightDetails",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "App.NumberOfPeople"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.NumberOfPeople",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "NumberOfPeople",
                 "module": "App",
                 "type": "App"
               }

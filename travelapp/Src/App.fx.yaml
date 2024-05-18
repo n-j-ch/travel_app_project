@@ -2,6 +2,8 @@ App As appinfo:
     BackEnabled: =false
     OnStart: |-
         =
+        
+        
         Set(TransportationPercent, 0.2);
         Set(AccommodationPercent, 0.1);
         Set(FoodDrinkPercent, 0.2);
@@ -16,6 +18,7 @@ App As appinfo:
             ArrivalTime: Date(1970, 1, 1),
             Status: ""
         });
+    StartScreen: =Login
     Theme: =PowerAppsTheme
 
     Host As hostControl.DefaultHostControlVariant:
